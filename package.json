@@ -1,5 +1,5 @@
 {
-  "name": "react-native-toast",
+  "name": "@bobbyecho/react-native-toast",
   "version": "1.0.1",
   "description": "a cool global toast for react native, you can use anywhere inside your application",
   "main": "lib/commonjs/index",
