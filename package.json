@@ -1,10 +1,10 @@
 {
   "name": "react-native-toast",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "a cool global toast for react native, you can use anywhere inside your application",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
-  "types": "lib/typescript/src/index.d.ts",
+  "types": "lib/typescript/typings.d.ts",
   "react-native": "src/index",
   "source": "src/index",
   "files": [
