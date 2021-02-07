@@ -1,6 +1,6 @@
 {
   "name": "@bobbyecho/react-native-toast",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a cool global toast for react native, you can use anywhere inside your application",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -81,7 +81,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
+      "pre-commit": "yarn lint --no-verify && yarn typescript"
     }
   },
   "commitlint": {
