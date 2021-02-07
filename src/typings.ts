@@ -6,6 +6,8 @@ export type Provider = React.FunctionComponent & {
   ref: ToastRef | null;
 }
 
+export type RegisterRef = (ref: ToastRef) => void;
+
 export interface ToastRef {
   showToast: ShowToast;
 }

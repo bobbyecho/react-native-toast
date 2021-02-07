@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Text} from "react-native";
 import ToastProvider from "./ToastProvider";
-import type {ShowToast, ToastRef, ToastProps} from "./typings";
+import type {ShowToast, ToastRef, ToastProps, RegisterRef} from "./typings";
 
 const Toast: React.ForwardRefRenderFunction<ToastRef, ToastProps> = (
     _props, ref
@@ -49,9 +49,9 @@ const styles = StyleSheet.create({
     }
 });
 
-export function register(ref: ToastRef) {
+export const register: RegisterRef = (ref: ToastRef): void => {
   ToastProvider.ref = ref;
-}
+};
 
 export const showToast: ShowToast = (text: string, duration = 2500) => {
     ToastProvider.ref?.showToast(text, duration);
