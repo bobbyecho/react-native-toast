@@ -5,17 +5,45 @@ a cool global toast for react native, you can use anywhere inside your applicati
 ## Installation
 
 ```sh
-npm install react-native-toast
+npm install @bobbyecho/react-native-toast
+
+or
+
+yarn add @bobbyecho/react-native-toast
 ```
 
 ## Usage
 
+import ToastProvider in top of your application
+
 ```js
-import Toast from "react-native-toast";
+import {ToastProvider} from "@bobbyecho/react-native-toast";
 
 // ...
 
-const result = await Toast.multiply(3, 7);
+return (
+    <Container>
+        <ToastProvider />
+    </Container>
+);
+```
+
+call showToast anywhere inside your application
+
+```js
+import {showToast} from "@bobbyecho/react-native-toast";
+
+const Home = (): JSX.Element => {
+    const buttonPressed = (): void => {
+      showToast('Hello world!', 2000);
+    };
+
+    return (
+        <Button onPress={buttonPressed}>Press me!</Button>
+    );
+}
+
+export default Home;
 ```
 
 ## Contributing
